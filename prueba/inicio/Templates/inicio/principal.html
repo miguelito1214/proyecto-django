@@ -1,27 +1,26 @@
-{% extends "inicio/encabezado.html" %}
-{% block titulo%} PRINCIPAL {%endblock%}
-{% block contenido%}
+    {% extends "inicio/encabezado.html" %}
 
-	<!-- Contenido Principal-->
-    <div class="page-content">
+    {% block titulo%} PRINCIPAL {%endblock%}
+    {% block nombre%} Principal {%endblock%}
+
+    {% block imagen%}
+        {%load static%}
+    {%static 'inicio/images/home.png'%}
+    {%endblock%}
 
 
-        <!--Encabezdo -->
+    {%block barra%}<div class="page-header">
         <div class="page-header">
-            <div class="page-title">
-                <h3>Alumnos
-                <small>Lista de Alumnos </small></h3>
-            </div>
-
-            
+        <div class="page-title">
+            <h3>Alumnos
+            <small>Lista de Alumnos </small></h3>
         </div>
-        <!-- /Encabezado-->
 
+    </div>  {%endblock%}
+    {% block contenido%}
 
-    </div>
-    <!-- /Contenido Principal-->
-     
-{%endblock%}
+        
+    {%endblock%}
 
 
 
